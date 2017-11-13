@@ -1,0 +1,30 @@
+{
+  "name": "realhouse_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/speedblizzz/realhouse_html.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/speedblizzz/realhouse_html/issues"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "devDependencies": {
+    "gulp-rigger": "^0.5.8",
+    "gulp-stylus": "^2.6.0"
+  },
+  "homepage": "https://github.com/speedblizzz/realhouse_html#readme"
+}
