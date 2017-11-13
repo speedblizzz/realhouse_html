@@ -13,14 +13,18 @@ var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
         html: 'build/',
         js: 'build/js/',
+        libsJs: 'build/js/libs',
         css: 'build/css/',
+        libsCss: 'build/css/libs/',
         img: 'build/img/',
         fonts: 'build/fonts/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
         js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
+        libsJs: 'src/js/libs/**/*.*',
         style: 'src/styles/main.styl',
+        libsStyles: 'src/styles/libs/**/*.*',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'src/fonts/**/*.*'
     },
@@ -29,7 +33,9 @@ var path = {
         js: 'src/js/**/*.js',
         style: 'src/styles/**/*.styl',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        libsJs: 'src/js/libs/**/*.*',
+        libsStyles: 'src/styles/libs/**/*.*'
     },
     clean: './build'
 };
@@ -58,6 +64,12 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true})); //И перезагрузим сервер
 });
 
+gulp.task('js-libs:build', function () {
+    gulp.src(path.src.libsJs) //Найдем наши libs
+        .pipe(gulp.dest(path.build.libsJs)) //Выплюнем готовые libs в build
+        .pipe(reload({stream: true})); //И перезагрузим сервер
+});
+
 gulp.task('style:build', function () {
     gulp.src(path.src.style) //Выберем наш main.styl
         .pipe(stylus({
@@ -66,6 +78,13 @@ gulp.task('style:build', function () {
         })) //Скомпилируем
         .pipe(prefixer()) //Добавим вендорные префиксы
         .pipe(gulp.dest(path.build.css)) //И в build
+        .pipe(reload({stream: true}));
+});
+
+gulp.task('style-libs:build', function () {
+    gulp.src(path.src.libsStyles) //Выберем наши css-дшиы
+
+        .pipe(gulp.dest(path.build.libsCss)) //И в build
         .pipe(reload({stream: true}));
 });
 
@@ -82,7 +101,9 @@ gulp.task('image:build', function () {
 
 gulp.task('build', [
     'html:build',
+    'js-libs:build',
     'js:build',
+    'style-libs:build',
     'style:build',
     'fonts:build',
     'image:build'
@@ -95,8 +116,14 @@ gulp.task('watch', function(){
     watch([path.watch.style], function(event, cb) {
         gulp.start('style:build');
     });
+    watch([path.watch.libsStyles], function(event, cb) {
+        gulp.start('style-libs:build');
+    });
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');
+    });
+    watch([path.watch.libsJs], function(event, cb) {
+        gulp.start('js-libs:build');
     });
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');
