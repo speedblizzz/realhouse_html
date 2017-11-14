@@ -1,0 +1,98 @@
+
+
+.baner
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 85px 0 85px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+@media (max-width: 1200px)
+  .baner
+    padding: 45px 0 85px;
+
+@media (max-width: 992px)
+  .baner
+    padding: 30px 0 70px;
+
+@media (max-width: 600px)
+  .baner
+    padding: 30px 0 40px;
+    height: 350px
+
+
+.baner_wrap
+  text-align: center;
+  text-transform: uppercase;
+  color: backgroundColor
+  font-weight: bold;
+
+.baner_wrap h1
+  margin: 0 0 38px;
+  font-size: 74px;
+  color: backgroundColor
+  line-height: 1.066;
+  font-weight: bold;
+
+@media (max-width: 992px)
+  .baner_wrap h1
+    font-size: 50px;
+@media (max-width: 600px)
+  .baner_wrap h1
+    font-size: 30px;
+
+.mask
+  position: absolute;
+  background-color: rgba(0,0,0,.2);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+.baner_wrap h3
+  margin-bottom: 38px;
+  margin-top: 20px;
+  color: backgroundColor
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+
+@media (max-width: 992px)
+  .baner_wrap h3
+    font-size: 20px;
+    margin-bottom: 25px;
+
+@media (max-width: 992px)
+  .baner_wrap h3
+    font-size: 12px;
+    margin-bottom: 25px;
+    max-width: 250px
+    margin-left auto
+    margin-right: auto
+
+.slider_more_btn
+  display: inline-block;
+  padding: 12px 20px;
+  text-align: center;
+  background: mainColor;
+  color: backgroundColor
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition all 0.3s
+  outline none
+  &:hover
+    transform scale(1.1)
+    background: mainColor;
+    color: backgroundColor
+    text-decoration: none
+  &:focus,&:active
+    outline none
+    transform scale(0.9)
+    background: mainColor;
+    color: backgroundColor
+    text-decoration: none

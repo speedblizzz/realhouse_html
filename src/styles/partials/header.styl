@@ -4,7 +4,8 @@
 
 .header_top
   padding-top: 25px
-  margin-bottom: 25px;
+  padding-bottom: 5px;
+  min-width 320px
 .logo
   display: block
   width: 100%
@@ -14,12 +15,22 @@
   -webkit-background-size: 100%
   background-size: 100%
 
+@media screen and (max-width: 767px)
+  .logo
+    width 235px
+
+@media screen and (max-width: 480px)
+  .logo
+    width 180px
+
+
 .top_btn_block
   display: flex
   flex-flow: row wrap
   justify-content: flex-end
   align-items flex-end
-  height 60px
+  min-height 60px
+
 
 .top_btn
   position: relative
@@ -41,12 +52,37 @@
     text-decoration: none
 
 
+
+.top_btn_block-mobile
+  width: 100%
+  display: flex
+  flex-flow: row wrap
+  justify-content: flex-end
+  min-height 60px
+
+.top_btn_mobile
+  position: relative
+  box-sizing border-box
+  margin-bottom: 5px
+  margin-top: 5px
+  margin-right: 10px
+  width 40px
+  height: 40px
+  border 2px solid mainColor
+  text-transform: uppercase;
+
+  transition all 0.3s
+  &:hover
+    background-color: mainColor
+
+.top_btn_mobile:last-child
+  margin-right: 0
+
 .top_btn-calc svg
 .top_btn-call svg
   position: absolute
   right: 10px
   top: 7px
-
   fill mainColor
   transition all 0.3s
 
@@ -59,6 +95,26 @@
 
 .top_btn-calc:hover svg
 .top_btn-call:hover svg
+  fill backgroundColor
+
+.top_btn_block-mobile .top_btn-calc svg
+.top_btn_block-mobile .top_btn-call svg
+  position: absolute
+  right: 7px
+  top: 4px
+  fill mainColor
+  transition all 0.3s
+
+.top_btn_block-mobile .top_btn-calc svg
+  width: 22px
+
+.top_btn_block-mobile .top_btn-call svg
+  width: 25px
+  right: 6px
+  top: 6px
+
+.top_btn_block-mobile .top_btn-calc:hover svg
+.top_btn_block-mobile .top_btn-call:hover svg
   fill backgroundColor
 
 .top_contact_block
@@ -87,6 +143,13 @@
   min-height: 60px;
   background-color: mainColor
 
+
+@media screen and (max-width: 767px)
+  .top_main_menu_block
+    background-color: backgroundColor
+    border-top 1px solid mainColor
+    border-bottom 4px solid mainColor
+
 .top_main_menu_list
   display: flex
   flex-flow: row nowrap
@@ -94,6 +157,55 @@
   list-style none
   margin: 0
   padding: 0
+
+@media screen and (max-width: 767px)
+  .top_main_menu_list
+    flex-flow: column nowrap
+    background-color: #ECEDEE
+    border-top: 4px solid #e0e1e2;
+
+@media screen and (max-width: 767px)
+  .top_main_menu_wrap
+    height 60px
+    overflow hidden
+  .top_main_menu_wrap.collapsed
+    height auto
+  .top_main_menu_wrap.collapsed .top_main_menu_toggle-arrow
+    display: none
+  .top_main_menu_wrap.collapsed .top_main_menu_toggle-close
+    display: inline-block
+
+.top_main_menu_toggle
+  position: relative
+  display: flex
+  flex-flow row nowrap
+  justify-content:space-between
+  align-items center
+  height: 60px
+  outline none
+  cursor: pointer
+
+.top_main_menu_toggle-name
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase
+  color: rgb(54, 54, 54)
+
+.top_main_menu_toggle-arrow
+  font-size: 24px
+  color: rgb(54, 54, 54)
+
+.top_main_menu_toggle-close
+  font-size: 24px
+  color: rgb(54, 54, 54)
+  display: none
+
+@media screen and (min-width: 768px)
+  .top_main_menu_toggle
+    display: none
+
+
+
 
 
 .top_main_menu-sub_menu
@@ -114,6 +226,7 @@
 
 
 .top_main_menu-link
+  position: relative
   font-size: 13px
   outline: none;
   text-decoration: none;
@@ -130,25 +243,79 @@
   text-transform: uppercase;
   transition all 0.3s
 
+.top_main_menu-link .fa
+  position: absolute
+  font-size: 10px
+  right: 4%
+  bottom 15px
+
+  margin-left:5px
+
+.top_main_menu-link:focus
+  color: backgroundColor;
+  text-decoration: none
+  outline none
+
 .top_main_menu-item:hover .top_main_menu-link
   color: backgroundColor;
   text-decoration: none
 .top_main_menu-item:last-child .top_main_menu-link
   border none
 
+@media screen and (max-width: 767px)
+  .top_main_menu-item
+    min-height auto
+    border-bottom: 1px solid #e0e1e2;
+    outline none
+
+  .top_main_menu-item:hover
+    background-color: mainColor
+
+  .top_main_menu-item:last-child
+    border none
+
+  .top_main_menu-link
+    display: flex
+    flex-flow row nowrap
+    justify-content: space-between
+    align-items center
+    color: textColor
+    text-align: left;
+    border:none
+    outline none
+
+  .top_main_menu-link:focus
+    color: backgroundColor
+    text-decoration: none
+    background-color: mainColor
+    outline none
+
 .top_main_menu-sub_menu
+  width: 100%
   margin: 0
   list-style none
-  transition-duration: 200ms;
-  transition-timing-function: ease-in;
-  transition-property: margin-top;
-  z-index: 1500;
-  position: absolute;
-  top 100%
   background: backgroundColor;
-  width: 360px ;
-  padding: 15px 10px;
-  border-bottom: 4px solid mainColor;
+  padding: 15px 15px;
+
+@media screen and (min-width: 768px)
+  .top_main_menu-sub_menu
+    margin: 0
+    list-style none
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    transition-property: margin-top;
+    z-index: 1500;
+    position: absolute;
+    top 100%
+    background: #eee;
+    width: 360px ;
+    padding: 15px 10px;
+    border-bottom: 4px solid mainColor;
+  .top_main_menu-item:hover > .top_main_menu-sub_menu
+    display: block
+
+
+
 
 .top_main_menu-sub_link
   display: block
@@ -160,5 +327,10 @@
   margin-top: 10px
   padding: 0px 15px 0px 15px
 
-.top_main_menu-item:hover > .top_main_menu-sub_menu
+.top_main_menu-link.active + .top_main_menu-sub_menu
   display: block
+
+.top_main_menu-sub_link:hover
+  color: textColor
+  text-decoration: underline
+
