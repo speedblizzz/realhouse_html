@@ -1,0 +1,208 @@
+.service_block
+  background-color: #ecedee;
+
+.service_heading
+  position: relative
+  margin: 60px auto 30px;
+  width: 100%;
+  font-weight: bold;
+  color: #363636;
+  text-align: center;
+  text-transform: uppercase;
+  &:after
+    content ''
+    position: absolute
+    left: 50%
+    margin-left: -40px
+    top: calc(100%+30px)
+    height: 2px;
+    background-color: mainColor;
+    width: 80px;
+
+
+.service_list
+  padding-top: 38px
+.service_item
+  width: 100%
+
+
+.service_link
+  display: block
+  width: 100%
+
+.service_link img
+  display: block
+  max-width 100%
+  margin: 0 auto
+  margin-bottom: 18px;
+
+.service_item
+  max-width 370px
+  background-color: backgroundColor
+  padding: 10px 10px 20px 10px;
+  text-align: center;
+  border-bottom: 4px solid #e0e1e2;
+  margin-bottom: 25px;
+  margin-right: auto
+  margin-left: auto
+  overflow: hidden;
+
+.service_item_sub
+  border-bottom: 1px solid #ecedee;
+  padding: 0 20px;
+  text-align: center;
+  min-height: 44px;
+
+.service_item_sub a
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #ecedee;
+  color: #363636;
+  padding: 0;
+
+.service_item_sub a:hover
+  color: mainColor
+
+.service_item_sub div
+  min-height 44px
+
+.service_item_price
+  font-weight: bold;
+  font-style: normal;
+  font-size: 21px;
+  color: mainColor;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+
+.service_item_button
+  margin: 20px 0 0;
+  text-align: center;
+  display: inline-block;
+  padding: 12px 20px;
+  background: mainColor
+  color: backgroundColor
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  border 2px solid mainColor
+  transition all 0.3s
+  &:hover
+    color: mainColor
+    background-color: backgroundColor
+    text-decoration: none
+
+@media (min-width:768px) and (max-width:991px)
+  .service_item_button
+    font-size: 12px
+
+.accessoires .service_item_button
+  font-size: 14px
+
+
+.accessoires .service_item
+  max-width 300px
+
+.service_corner_bg_block
+  background-image: url("..//img/top-right-bg.png")
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-color: white;
+
+.service_sub_block
+  padding: 38px 0;
+  text-align: center;
+  height: 452px;
+  background-image: url("..//img/top-left-bg.png")
+  background-position: top left;
+  background-repeat: no-repeat;
+  border-bottom: 4px solid #e0e1e2;
+
+@media (max-width: 1200px)
+  .service_sub_block
+    height: 404px
+
+.service_sub_heading
+  position: relative
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #363636;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin: 0;
+  &:after
+    content ''
+    position: absolute
+    height: 2px;
+    background-color: mainColor;
+    width: 80px;
+    left: 50%
+    margin-left: -40px
+    top 100%
+
+.service_sub_list
+  width: 100%
+  margin: 0
+  padding: 0
+  margin-top: 38px
+  list-style: none
+  & li
+    margin-bottom: 14px;
+  & a
+    text-decoration: underline;
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 100;
+  & a:hover
+    text-decoration: none
+    color: mainColor
+
+.service_mobile_block
+  min-height: 50px;
+  padding: 0 20px;
+  margin-bottom: 28px;
+  background: backgroundColor;
+  border-bottom: 4px solid #e0e1e2;
+  cursor: pointer;
+  overflow: hidden;
+  & p
+    font-size: 14px;
+    font-weight: bold;
+    color: #363636;
+    float: left;
+    text-transform: uppercase;
+    margin-top: 14px;
+  & i.fa
+    position: relative;
+    display: block;
+    float: right;
+    color: mainColor;
+    margin: 12px 0 0;
+
+
+.service_mobile_sub_list
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  & li
+    margin-bottom: 14px;
+  & a
+    text-decoration: underline;
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 100;
+  & a:hover
+    color: mainColor
+    text-decoration: none
+
+.service_mobile_sub_wrap
+  display: none
+
+.service_mobile_sub_wrap.visible
+  display: block

@@ -26,9 +26,15 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
         $(this).toggleClass('active');
     });
 
+    $('.service_mobile_block').on('click',function () {
+        $('.service_mobile_sub_wrap').toggleClass('visible');
+    });
+
     $('.slider').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
 })();
