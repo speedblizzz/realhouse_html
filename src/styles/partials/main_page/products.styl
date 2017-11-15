@@ -1,6 +1,9 @@
 .products_block
   background-color: #ecedee;
 
+.products_block.one-page
+  background-color: backgroundColor
+
 .products_heading
   position: relative
   margin: 60px auto 30px;
@@ -20,11 +23,21 @@
     width: 80px;
 
 
+
+
+
 .products_list
   padding-top: 38px
 .products_item
   width: 100%
 
+.products_list.one-page
+  background-color: #ecedee
+  margin-top: 38px
+
+.products_list.accessoires.one-page
+  background-color: #ecedee
+  margin-top: 38px
 
 .products_link
   display: block
@@ -96,6 +109,11 @@
     color: mainColor
     background-color: backgroundColor
     text-decoration: none
+  &:focus
+    color: mainColor
+    background-color: backgroundColor
+    text-decoration: none
+    outline none
 
 @media (min-width:768px) and (max-width:991px)
   .products_item_button

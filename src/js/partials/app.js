@@ -21,5 +21,13 @@
         autoplay: true,
         autoplaySpeed: 2000,
     });
+
+    $(document).ready(function(){
+        $('#lightgallery').lightGallery();
+    });
+
+
 })();
+
+
 

@@ -16,8 +16,7 @@
 
 
 
-        <script src="js/libs/jquery-3.2.1.min.js" defer></script>
-        <script src="js/libs/bootstrap.min.js" defer></script>
+
         <script src="js/main.js" defer></script>
         <title>Document</title>
     </head>
@@ -63,7 +62,7 @@
         </g>
         </svg>
                             </a>
-                            <a href="#" class="top_btn top_btn-call">вызвать замерщика
+                            <a href="#" class="top_btn top_btn-call" data-toggle="modal" data-target="#modal_call_meter">вызвать замерщика
                                 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 viewBox="-293 387 23.2 20" style="enable-background:new -293 387 23.2 20;" xml:space="preserve">
         
@@ -119,7 +118,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-4 hidden-xs">
                         <div class="top_contact_block">
                             <i class="fa fa-phone top_phone_icon" aria-hidden="true"></i>
-                            <a href="#" class="top_req_call">Заказать звонок</a>
+                            <a href="#" class="top_req_call" data-toggle="modal" data-target="#modal_phone">Заказать звонок</a>
                             <p class="top_phone">+7 (34147) 5-30-88</p>
                             <p><span>пн-пт: 09:00-18:00, сб: 09:00-15:00</span></p>
                         </div>
@@ -142,7 +141,7 @@
                                     <i class="fa fa-caret-up top_main_menu_toggle-close" aria-hidden="true"></i>
                                 </div>
                                 <ul class="top_main_menu_list">
-                                    <li class="top_main_menu-item parent"><a class="top_main_menu-link" href="http://udm-okna.ru/category/productions/" tabindex="0">Продукция <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <li class="top_main_menu-item parent"><a class="top_main_menu-link" href="/products.html" tabindex="0">Продукция <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                         <ul class="top_main_menu-sub_menu">
                                             <li class="top_main_menu-sub_item" ><a class="top_main_menu-sub_link" href="http://udm-okna.ru/plastikovye-okna/">Пластиковые окна</a></li>
                                             <li class="top_main_menu-sub_item"><a class="top_main_menu-sub_link" href="http://udm-okna.ru/plastikovye-dveri/">Пластиковые двери</a></li>
@@ -150,7 +149,7 @@
                                             <li class="top_main_menu-sub_item" ><a class="top_main_menu-sub_link" href="http://udm-okna.ru/category/acses/">Аксессуары для окон</a></li>
                                         </ul>
                                     </li>
-                                    <li class="top_main_menu-item parent"><a class="top_main_menu-link" href="http://udm-okna.ru/category/services/" tabindex="0">Услуги <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <li class="top_main_menu-item parent"><a class="top_main_menu-link" href="/services.html" tabindex="0">Услуги <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                         <ul class="top_main_menu-sub_menu">
                                             <li class="top_main_menu-sub_item" ><a class="top_main_menu-sub_link" href="http://udm-okna.ru/osteklenie-zagorodnyh-domov-i-kottedzhej/">Остекление загородных домов и коттеджей</a></li>
                                             <li class="top_main_menu-sub_item" ><a class="top_main_menu-sub_link" href="http://udm-okna.ru/osteklenie-balkonov-i-lodzhij/">Остекление балконов и лоджий</a></li>
@@ -163,9 +162,9 @@
                                             <li class="top_main_menu-sub_item" ><a class="top_main_menu-sub_link" href="http://udm-okna.ru/tonirovanie-okon/">Тонирование окон</a></li>
                                         </ul>
                                     </li>
-                                    <li class="top_main_menu-item" ><a class="top_main_menu-link" href="http://udm-okna.ru/category/actions/" tabindex="0">Акции</a></li>
+                                    <li class="top_main_menu-item" ><a class="top_main_menu-link" href="/actions.html" tabindex="0">Акции</a></li>
                                     <li class="top_main_menu-item" ><a class="top_main_menu-link" href="http://udm-okna.ru/variants/" tabindex="0">Оплата</a></li>
-                                    <li class="top_main_menu-item" ><a class="top_main_menu-link" href="http://udm-okna.ru/primery-rabot/" tabindex="0">Наши работы</a></li>
+                                    <li class="top_main_menu-item" ><a class="top_main_menu-link" href="/gallery.html" tabindex="0">Наши работы</a></li>
                                     <li class="top_main_menu-item" ><a class="top_main_menu-link" href="http://udm-okna.ru/otzyvy/" tabindex="0">Отзывы</a></li>
                                     <li class="top_main_menu-item" ><a class="top_main_menu-link" href="http://udm-okna.ru/offices/" tabindex="0">Контакты</a></li>
                                 </ul>
@@ -383,7 +382,7 @@
                                                 </div>
                                                 <p class="products_item_price">от 7 900 руб.</p>
                                             </div><!-- .entry-meta -->
-                                            <a class="products_item_button" href="#"><span>Вызвать замерщика</span></a>
+                                            <a class="products_item_button" href="#" data-toggle="modal" data-target="#modal_call_meter"><span>Вызвать замерщика</span></a>
                                         </header><!-- .entry-header -->
                                     </article><!-- #post-## -->
                                 </div>
@@ -401,7 +400,7 @@
                                             </div>
                                             <p class="products_item_price">от 7 900 руб.</p>
                                         </div><!-- .entry-meta -->
-                                        <a class="products_item_button" href="#"><span>Вызвать замерщика</span></a>
+                                        <a class="products_item_button" href="#" data-toggle="modal" data-target="#modal_call_meter"><span>Вызвать замерщика</span></a>
                                     </header><!-- .entry-header -->
                                 </article><!-- #post-## -->
                             </div>
@@ -419,7 +418,7 @@
                                             </div>
                                             <p class="products_item_price">от 7 900 руб.</p>
                                         </div><!-- .entry-meta -->
-                                        <a class="products_item_button" href="#"><span>Вызвать замерщика</span></a>
+                                        <a class="products_item_button" href="#" data-toggle="modal" data-target="#modal_call_meter"><span>Вызвать замерщика</span></a>
                                     </header><!-- .entry-header -->
                                 </article><!-- #post-## -->
                             </div>
@@ -452,7 +451,7 @@
                                     </div>
                                     <p class="products_item_price">от 525 руб.</p>
                                 </div><!-- .entry-meta -->
-                                <a class="products_item_button" href="#"><span>Где купить</span></a>
+                                <a class="products_item_button" href="#" data-toggle="modal" data-target="#modal_call_meter"><span>Где купить</span></a>
                             </header><!-- .entry-header -->
                         </article><!-- #post-## -->
                     </div>
@@ -582,7 +581,7 @@
                                             </div>
                                             <p class="service_item_price">от <span>300</span> руб. / кв. м.</p>
                                         </div><!-- .entry-meta -->
-                                        <a class="service_item_button" href="#"><span>Вызвать замерщика</span></a>
+                                        <a class="service_item_button" href="#" data-toggle="modal" data-target="#modal_call_meter"><span>Вызвать замерщика</span></a>
                                     </header><!-- .entry-header -->
                                 </article><!-- #post-## -->
                             </div>
@@ -600,7 +599,7 @@
                                             </div>
                                             <p class="service_item_price">от <span>300</span> руб. / кв. м.</p>
                                         </div><!-- .entry-meta -->
-                                        <a class="service_item_button" href="#"><span>Вызвать замерщика</span></a>
+                                        <a class="service_item_button" href="#" data-toggle="modal" data-target="#modal_call_meter"><span>Вызвать замерщика</span></a>
                                     </header><!-- .entry-header -->
                                 </article><!-- #post-## -->
                             </div>
@@ -612,90 +611,96 @@
             </div>
         
         </section>
-        <section id="actions">
+        <section id="actions_block">
         
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="products_heading">Акции и скидки</h2>
+                        <h2 class="actions_heading">Акции и скидки</h2>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="wrap-news">
-                            <a href="http://udm-okna.ru/direktor-v-otpuske/"><img src="http://udm-okna.ru/wp-content/uploads/2017/11/oct.jpg" alt="Новая пятикамерная система REHAU GRAZIO"></a>
-                            <article id="post-1791" class="post-1791 post type-post status-publish format-standard hentry category-actions">
-                                <header class="entry-header">
-                                    <div class="entry-meta">
-                                        <a href="http://udm-okna.ru/direktor-v-otpuske/">Новая пятикамерная система REHAU GRAZIO</a>
-                                        <p class="data-end">до 15.11.2017</p>
-                                    </div><!-- .entry-meta -->
-                                </header><!-- .entry-header -->
-                            </article><!-- #post-## -->
+            <div class="actions_list">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="actions_item_wrap">
+                                <a href="http://udm-okna.ru/direktor-v-otpuske/" class="actions_link">
+                                    <img src="http://udm-okna.ru/wp-content/uploads/2017/11/oct.jpg" alt="Новая пятикамерная система REHAU GRAZIO">
+                                </a>
+                                <article >
+                                    <header class="actions_header">
+                                        <div>
+                                            <a href="http://udm-okna.ru/direktor-v-otpuske/" class="actions_article_title">Новая пятикамерная система REHAU GRAZIO</a>
+                                            <p class="actions_article_date-end">до 15.11.2017</p>
+                                        </div><!-- .entry-meta -->
+                                    </header><!-- .entry-header -->
+                                </article><!-- #post-## -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="wrap-news">
-                        <a href="http://udm-okna.ru/stan-nashim-partnyorom-i-poluchi-skidku-50/"><img src="http://udm-okna.ru/wp-content/uploads/2016/09/Stan_nashim_partnerom.jpg" alt="Стань нашим партнёром и получи скидку 50%!"></a>
-                        <article id="post-903" class="post-903 post type-post status-publish format-standard hentry category-actions">
-                            <header class="entry-header">
-                                <div class="entry-meta">
-                                    <a href="http://udm-okna.ru/stan-nashim-partnyorom-i-poluchi-skidku-50/">Стань нашим партнёром и получи скидку 50%!</a>
-                                    <p class="data-end">до 30.11.2017</p>
-                                </div><!-- .entry-meta -->
-                            </header><!-- .entry-header -->
-                        </article><!-- #post-## -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="actions_item_wrap">
+                                <a href="http://udm-okna.ru/direktor-v-otpuske/" class="actions_link">
+                                    <img src="http://udm-okna.ru/wp-content/uploads/2017/11/oct.jpg" alt="Новая пятикамерная система REHAU GRAZIO">
+                                </a>
+                                <article >
+                                    <header class="actions_header">
+                                        <div>
+                                            <a href="http://udm-okna.ru/direktor-v-otpuske/" class="actions_article_title">Новая пятикамерная система REHAU GRAZIO</a>
+                                            <p class="actions_article_date-end">до 15.11.2017</p>
+                                        </div><!-- .entry-meta -->
+                                    </header><!-- .entry-header -->
+                                </article><!-- #post-## -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="wrap-news">
-                        <a href="http://udm-okna.ru/skidka-pensioneram-3/"><img src="http://udm-okna.ru/wp-content/uploads/2016/07/actions1.png" alt="Скидка пенсионерам — 3%"></a>
-                        <article id="post-339" class="post-339 post type-post status-publish format-standard hentry category-actions">
-                            <header class="entry-header">
-                                <div class="entry-meta">
-                                    <a href="http://udm-okna.ru/skidka-pensioneram-3/">Скидка пенсионерам — 3%</a>
-                                    <p class="data-end">до 30.11.2017</p>
-                                </div><!-- .entry-meta -->
-                            </header><!-- .entry-header -->
-                        </article><!-- #post-## -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="actions_item_wrap">
+                                <a href="http://udm-okna.ru/direktor-v-otpuske/" class="actions_link">
+                                    <img src="http://udm-okna.ru/wp-content/uploads/2017/11/oct.jpg" alt="Новая пятикамерная система REHAU GRAZIO">
+                                </a>
+                                <article >
+                                    <header class="actions_header">
+                                        <div>
+                                            <a href="http://udm-okna.ru/direktor-v-otpuske/" class="actions_article_title">Новая пятикамерная система REHAU GRAZIO</a>
+                                            <p class="actions_article_date-end">до 15.11.2017</p>
+                                        </div><!-- .entry-meta -->
+                                    </header><!-- .entry-header -->
+                                </article><!-- #post-## -->
+                            </div>
                         </div>
+        
                     </div>
                 </div>
             </div>
+        
         </section>
-        <section id="called">
-            <div class="form-call">
+        <section class="call_section">
+            <div class="call_block">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="form-call-h1">Бесплатный вызов замерщика:</h1>
+                            <h1 class="call_heading">Бесплатный вызов замерщика:</h1>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <div role="form" class="wpcf7" id="wpcf7-f299-o2" lang="ru-RU" dir="ltr">
-                                <div class="screen-reader-response"></div>
-                                <form action="/#wpcf7-f299-o2" method="post" class="wpcf7-form" novalidate="novalidate">
-                                    <div style="display: none;">
-                                        <input type="hidden" name="_wpcf7" value="299">
-                                        <input type="hidden" name="_wpcf7_version" value="4.5">
-                                        <input type="hidden" name="_wpcf7_locale" value="ru_RU">
-                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f299-o2">
-                                        <input type="hidden" name="_wpnonce" value="9b34b7abf4">
+                            <div class="call_response"></div>
+                            <div class="call_error"></div>
+                            <form action="#" method="post" class="call_form" novalidate="novalidate">
+        
+                                    <div class="col-md-5 col-sm-6 col-xs-12">
+                                        <input type="text" name="name" value="" size="40" class="call_input" placeholder="Ваше имя...">
                                     </div>
-                                    <div class="col-md-5 col-sm-6 col-xs-12"><span class="wpcf7-form-control-wrap text-338"><input type="text" name="text-338" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Ваш город..."></span></div>
-                                    <div class="col-md-5 col-sm-6 col-xs-12"><span class="wpcf7-form-control-wrap tel-59"><input type="tel" name="tel-59" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="+7 (____)"></span></div>
-                                    <div class="col-md-2 col-md-offset-0 col-sm-offset-9 col-sm-3 col-xs-offset-7 col-xs-5"><input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit"><img class="ajax-loader" src="http://udm-okna.ru/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Отправка..." style="visibility: hidden;"></div>
+                                    <div class="col-md-5 col-sm-6 col-xs-12">
+                                        <input type="text" name="phone" value="" size="40" class="call_input" placeholder="+7 (____)">
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-0 col-sm-12 col-xs-12">
+                                        <input type="submit" value="Отправить" class="call_submit">
+                                    </div>
                                     <div class="col-xs-12">
-                                        <p class="privacy-policy privacy-policy_tal">Оставляя свои персональные данные, Вы соглашаетесь с <a href="http://udm-okna.ru/politika-konfidentsialnosti/">Политикой конфиденциальности.</a></p>
+                                        <p class="call_privacy">Оставляя свои персональные данные, Вы соглашаетесь с <a href="http://udm-okna.ru/politika-konfidentsialnosti/">Политикой конфиденциальности.</a></p>
                                     </div>
-                                    <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                    <!--<form action="#">
-                                <div class="col-lg-5 col-md-5"><input type="text" class="form-control" id="inputName" placeholder="Ваше имя..."></div>
-                                <div class="col-lg-5 col-md-5"><input type="text" class="form-control" id="inputPhone" placeholder="+7 (___)"></div>
-                                <div class="col-lg-2 col-md-2"><button type="submit" class="btn btn-default">Отправить</button></div>
-                            </form>-->
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -754,58 +759,80 @@
                     <div class="footer_contact_block">
                         <span class="footer_contact_phone">+7 (34147) 5-30-88</span>
                         <span class="footer_contact_schedule">пн-пт: 09:00-18:00<br>сб: 09:00-15:00</span>
-                        <p class="footer_contact_req_call"><i class="fa fa-phone" aria-hidden="true"></i><a href="#">Заказать звонок</a></p>
+                        <p class="footer_contact_req_call"><i class="fa fa-phone" aria-hidden="true"></i><a href="#" id="call_modal" data-toggle="modal" data-target="#modal_phone">Заказать звонок</a></p>
                         <p class="footer_contact_send_mail"><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="mailto:info@favorit.ru" class="top-menu-a call-message">Написать нам</a></p>
         
                     </div>
         
                 </div>
-                <div id="modal_phone" class="bg-gradient-orange" style="display: none; top: 45%; opacity: 0;">
-                    <h2>Заказать звонок</h2>
-                    <span id="modal_phone_close"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-                    <div role="form" class="wpcf7" id="wpcf7-f494-o3" lang="ru-RU" dir="ltr">
-                        <div class="screen-reader-response"></div>
-                        <form action="/#wpcf7-f494-o3" method="post" class="wpcf7-form" novalidate="novalidate">
-                            <div style="display: none;">
-                                <input type="hidden" name="_wpcf7" value="494">
-                                <input type="hidden" name="_wpcf7_version" value="4.5">
-                                <input type="hidden" name="_wpcf7_locale" value="ru_RU">
-                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f494-o3">
-                                <input type="hidden" name="_wpnonce" value="e4944116c7">
+                <div id="modal_phone" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+        
+                        <!-- Modal content-->
+                        <div class="call_modal">
+                            <h2 class="call_modal_heading">Заказать звонок</h2>
+                            <span class="call_modal_close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                            <div role="form" class="wpcf7" id="wpcf7-f494-o3" lang="ru-RU" dir="ltr">
+                                <div class="call_modal_response"></div>
+                                <form action="#" method="post" class="call_modal_form">
+        
+                                    <p><label for="name_call" class="call_modal_label">*Имя:</label><br>
+                                        <input type="text" name="name" value="" size="40" class="call_modal_input" id="name_call" placeholder="Ваше имя..."><br>
+                                        <label for="phone_call" class="call_modal_label">*Телефон:</label>
+                                        <br>
+                                        <input type="text" name="text-200" value="" class="call_modal_input" id="phone_call" size="40" placeholder="+7 (____)"></p>
+                                    <div class="call_modal_footer">
+                                        <p class="call_modal_privacy" >Оставляя свои персональные данные,<br>
+                                            Вы соглашаетесь с <a href="http://udm-okna.ru/politika-konfidentsialnosti/">Политикой конфиденциальности.</a>
+                                        </p>
+                                        <p>
+                                            <input type="submit" value="Отправить" class="call_modal_submit">
+                                        </p>
+                                    </div>
+        
+        
+                                </form>
                             </div>
-                            <p><label for="name_call">*Город:</label><br>
-                                <span class="wpcf7-form-control-wrap text-520"><input type="text" name="text-520" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required modal_phone_input" id="name_call" aria-required="true" aria-invalid="false"></span><br>
-                                <label for="phone_call">*Телефон:</label><br>
-                                <span class="wpcf7-form-control-wrap text-200"><input type="text" name="text-200" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required modal_phone_input" id="phone_call" aria-required="true" aria-invalid="false" placeholder="+7 (____)"></span></p>
-                            <p class="privacy-policy privacy-policy_fll">Оставляя свои персональные данные,<br>
-                                Вы соглашаетесь с <a href="http://udm-okna.ru/politika-konfidentsialnosti/">Политикой конфиденциальности.</a></p>
-                            <p><input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit modal_phone_submit"><img class="ajax-loader" src="http://udm-okna.ru/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Отправка..." style="visibility: hidden;"></p>
-                            <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>            </div>
-                <div id="modal_message" class="bg-gradient-orange" style="opacity: 0; top: 45%; display: none;">
-                    <h2>Напишите нам:</h2>
-                    <span id="modal_phone_close"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-                    <div role="form" class="wpcf7" id="wpcf7-f553-o4" lang="ru-RU" dir="ltr">
-                        <div class="screen-reader-response"></div>
-                        <form action="/#wpcf7-f553-o4" method="post" class="wpcf7-form" novalidate="novalidate">
-                            <div style="display: none;">
-                                <input type="hidden" name="_wpcf7" value="553">
-                                <input type="hidden" name="_wpcf7_version" value="4.5">
-                                <input type="hidden" name="_wpcf7_locale" value="ru_RU">
-                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f553-o4">
-                                <input type="hidden" name="_wpnonce" value="129f067176">
+        
+                        </div>
+        
+                    </div>
+                </div>
+                <div id="modal_call_meter" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+        
+                        <!-- Modal content-->
+                        <div class="call_modal">
+                            <h2 class="call_modal_heading">Вызвать замерщика</h2>
+                            <span class="call_modal_close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                            <div role="form" class="wpcf7" lang="ru-RU" dir="ltr">
+                                <div class="call_modal_response"></div>
+                                <form action="#" method="post" class="call_modal_form">
+        
+                                    <p><label for="name_call" class="call_modal_label">*Имя:</label><br>
+                                        <input type="text" name="name" value="" size="40" class="call_modal_input" id="name_call" placeholder="Ваше имя..."><br>
+                                        <label for="phone_call" class="call_modal_label">*Телефон:</label>
+                                        <br>
+                                        <input type="text" name="text-200" value="" class="call_modal_input" id="phone_call" size="40" placeholder="+7 (____)"></p>
+                                    <div class="call_modal_footer">
+                                        <p class="call_modal_privacy" >Оставляя свои персональные данные,<br>
+                                            Вы соглашаетесь с <a href="http://udm-okna.ru/politika-konfidentsialnosti/">Политикой конфиденциальности.</a>
+                                        </p>
+                                        <p>
+                                            <input type="submit" value="Отправить" class="call_modal_submit">
+                                        </p>
+                                    </div>
+        
+        
+                                </form>
                             </div>
-                            <p><label for="write_name">*Город:</label><br>
-                                <span class="wpcf7-form-control-wrap text-9650"><input type="text" name="text-9650" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required write_text" id="write_name" aria-required="true" aria-invalid="false" placeholder="Ваш город..."></span><br>
-                                <label for="write_mail">*E-mail:</label><br>
-                                <span class="wpcf7-form-control-wrap email-9732"><input type="email" name="email-9732" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email write_text" id="write_mail" aria-required="true" aria-invalid="false"></span><br>
-                                <label for="write_textarea">*Сообщение:</label><br>
-                                <span class="wpcf7-form-control-wrap textarea-9482"><textarea name="textarea-9482" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required write_textarea" id="write_textarea" aria-required="true" aria-invalid="false" placeholder="Текст..."></textarea></span><br>
-                                <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit"><img class="ajax-loader" src="http://udm-okna.ru/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Отправка..." style="visibility: hidden;"></p>
-                            <div class="col-xs-12">
-                                <p class="privacy-policy privacy-policy_tal">Оставляя свои персональные данные, Вы соглашаетесь с <a href="http://udm-okna.ru/politika-konfidentsialnosti/">Политикой конфиденциальности.</a></p>
-                            </div>
-                            <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>            </div>
-                <div id="overlay" style="display: none;"></div>
+        
+                        </div>
+        
+                    </div>
+                </div>
+        
+        
             </div>
             <div class="footer_bottom_block">
                 <div class="container">

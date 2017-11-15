@@ -1,0 +1,56 @@
+
+.breadcrumbs_block
+  border-bottom: 1px solid #ecedee;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  & a
+    color: mainColor
+  & a:hover
+    text-decoration: underline
+
+.gallery_heading
+  position: relative
+  margin: 60px auto 30px;
+  width: 100%;
+  font-weight: bold;
+  color: #363636;
+  text-align: center;
+  text-transform: uppercase;
+  &:after
+    content ''
+    position: absolute
+    left: 50%
+    margin-left: -40px
+    top: calc(100%+30px)
+    height: 2px;
+    background-color: mainColor;
+    width: 80px;
+
+.lightgallery
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  margin: 0
+  padding: 0
+  list-style none
+
+.gallery_list
+  margin-top: 38px;
+  background-color: #ecedee;
+  padding: 40px 0 20px;
+  border-bottom: 6px solid mainColor;
+
+
+.gallery_item
+  width 32%
+  background: backgroundColor
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 100%;
+
+@media (max-width: 600px)
+  .lightgallery
+    flex-flow: column wrap
+    align-items: center
+  .gallery_item
+    width: 85%

@@ -1,5 +1,10 @@
+
+
 .service_block
   background-color: #ecedee;
+
+.service_block.one-page
+  background-color: backgroundColor
 
 .service_heading
   position: relative
@@ -25,7 +30,9 @@
 .service_item
   width: 100%
 
-
+.service_list.one-page
+  background-color: #ecedee;
+  margin-top: 38px
 .service_link
   display: block
   width: 100%
@@ -96,6 +103,11 @@
     color: mainColor
     background-color: backgroundColor
     text-decoration: none
+  &:focus
+    color: mainColor
+    background-color: backgroundColor
+    text-decoration: none
+    outline: none
 
 @media (min-width:768px) and (max-width:991px)
   .service_item_button
